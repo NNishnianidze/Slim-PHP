@@ -6,3 +6,4 @@ Using: MySQL, NGNIX, Docker, Composer
 
 ✅ Refactored to Slim PHP
 ✅ Implemented PHP-DI & Doctrine ORM
+✅ Implemented Symfony CLI 
