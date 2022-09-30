@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace App\Services;
 
@@ -17,11 +17,11 @@ class InvoiceService
     public function getPaidInvoices(): array
     {
         return $this->em->createQueryBuilder()
-                        ->select('i')
-                        ->from(Invoice::class, 'i')
-                        ->where('i.status = :status')
-                        ->setParameter('status', InvoiceStatus::Paid)
-                        ->getQuery()
-                        ->getArrayResult();
+            ->select('i')
+            ->from(Invoice::class, 'i')
+            ->where('i.status = :status')
+            ->setParameter('status', InvoiceStatus::Paid)
+            ->getQuery()
+            ->getArrayResult();
     }
 }

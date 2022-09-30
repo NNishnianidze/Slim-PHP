@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace App\Entity;
 
@@ -33,7 +33,7 @@ class Invoice
     #[Column(name: 'invoice_number')]
     private string $invoiceNumber;
 
-    #[Column]
+    #[Column(name: 'status', type: Types::INTEGER)]
     private InvoiceStatus $status;
 
     #[Column(name: 'created_at')]
